@@ -1,0 +1,3032 @@
+basePath: /api
+definitions:
+  global.COMPANY:
+    properties:
+      active:
+        type: string
+      address:
+        type: string
+      city:
+        type: string
+      comment:
+        type: string
+      company_id:
+        type: integer
+      company_name:
+        type: string
+      country:
+        type: string
+      create_date:
+        type: string
+      create_user:
+        type: integer
+      email:
+        type: string
+      logo:
+        type: string
+      npwp:
+        type: string
+      phone:
+        type: string
+      registration_no:
+        type: integer
+      state:
+        type: string
+      tax:
+        type: string
+      update_date:
+        type: string
+      update_user:
+        type: integer
+      website_url:
+        type: string
+      zip_code:
+        type: string
+    type: object
+  global.CredentialsLogin:
+    properties:
+      password:
+        type: string
+      username:
+        type: string
+    type: object
+  global.DEPARTEMENT:
+    properties:
+      active:
+        type: string
+      comment:
+        type: string
+      company_id:
+        type: integer
+      create_date:
+        type: string
+      create_user:
+        type: integer
+      dept_id:
+        type: integer
+      dept_name:
+        type: string
+      update_date:
+        type: string
+      update_user:
+        type: integer
+      user_id:
+        type: integer
+    type: object
+  global.DIVISION:
+    properties:
+      active:
+        type: string
+      comment:
+        type: string
+      create_date:
+        type: string
+      create_user:
+        type: integer
+      dept_id:
+        type: integer
+      div_id:
+        type: integer
+      div_name:
+        type: string
+      sub_div_id:
+        type: integer
+      update_date:
+        type: string
+      update_user:
+        type: integer
+      user_employee_id:
+        type: integer
+    type: object
+  global.GLOBAL:
+    properties:
+      active:
+        type: string
+      alias:
+        type: string
+      code:
+        type: string
+      comment:
+        type: string
+      create_date:
+        type: string
+      create_user:
+        type: integer
+      global_id:
+        type: integer
+      global_type:
+        type: string
+      update_date:
+        type: string
+      update_user:
+        type: integer
+      value:
+        type: string
+    type: object
+  global.LOG:
+    properties:
+      action_desc:
+        type: string
+      active:
+        type: string
+      code_trx:
+        type: string
+      comment:
+        type: string
+      create_date:
+        type: string
+      create_user:
+        type: integer
+      route_page:
+        type: string
+      update_date:
+        type: string
+      update_user:
+        type: integer
+      user_device:
+        type: string
+      user_id:
+        type: integer
+      user_ip:
+        type: string
+      user_logs_id:
+        type: integer
+    type: object
+  global.MODULE:
+    properties:
+      active:
+        type: string
+      comment:
+        type: string
+      create_date:
+        type: string
+      create_user:
+        type: integer
+      icon:
+        type: string
+      irl:
+        type: string
+      module_id:
+        type: integer
+      module_name:
+        type: string
+      module_seq:
+        type: string
+      parent_module:
+        type: string
+      update_date:
+        type: string
+      update_user:
+        type: integer
+    type: object
+  global.PARTNER:
+    properties:
+      active:
+        type: string
+      address:
+        type: string
+      city:
+        type: string
+      comment:
+        type: string
+      country:
+        type: string
+      create_date:
+        type: string
+      create_user:
+        type: integer
+      email:
+        type: string
+      is_logged_in:
+        type: string
+      last_login_date:
+        type: string
+      last_logout_date:
+        type: string
+      npwp:
+        type: string
+      partner_id:
+        type: integer
+      partner_name:
+        type: string
+      partner_profile:
+        type: string
+      password:
+        type: string
+      phone_num:
+        type: string
+      state:
+        type: string
+      tax:
+        type: string
+      type_partner:
+        type: string
+      update_date:
+        type: string
+      update_user:
+        type: integer
+      username:
+        type: string
+      website_url:
+        type: string
+      zip_code:
+        type: string
+    type: object
+  global.PERMISSION:
+    properties:
+      active:
+        type: string
+      comment:
+        type: string
+      create_date:
+        type: string
+      create_user:
+        type: integer
+      module_attribute:
+        type: integer
+      module_group:
+        type: string
+      update_date:
+        type: string
+      update_user:
+        type: integer
+      user_permission_id:
+        type: integer
+    type: object
+  global.SYSTEMSETTING:
+    properties:
+      active:
+        type: string
+      application_logo:
+        type: string
+      application_name:
+        type: string
+      application_release_date:
+        type: string
+      comment:
+        type: string
+      create_date:
+        type: string
+      create_user:
+        type: integer
+      default_curency:
+        type: string
+      default_curency_symbol:
+        type: string
+      default_language:
+        type: string
+      footer_text:
+        type: string
+      google_maps_apikey:
+        type: string
+      login_with:
+        type: string
+      system_ip:
+        type: string
+      system_setting_id:
+        type: integer
+      system_timezone:
+        type: string
+      update_date:
+        type: string
+      update_user:
+        type: integer
+    type: object
+  global.USER:
+    properties:
+      active:
+        type: string
+      comment:
+        type: string
+      create_date:
+        type: string
+      create_user:
+        type: integer
+      employee_id:
+        type: integer
+      is_logged_in:
+        type: string
+      last_login_date:
+        type: string
+      last_login_ip:
+        type: string
+      last_logout_date:
+        type: string
+      online_status:
+        type: string
+      partner_id:
+        type: integer
+      token:
+        type: string
+      update_date:
+        type: string
+      update_user:
+        type: integer
+      user_group_id:
+        type: integer
+      user_id:
+        type: integer
+      username:
+        type: string
+    type: object
+  global.USERGROUP:
+    properties:
+      active:
+        type: string
+      comment:
+        type: string
+      company_id:
+        type: integer
+      create_date:
+        type: string
+      create_user:
+        type: integer
+      permission_id:
+        type: integer
+      update_date:
+        type: string
+      update_user:
+        type: integer
+      user_group_id:
+        type: integer
+      user_group_name:
+        type: string
+      user_id:
+        type: integer
+    type: object
+info:
+  contact: {}
+  description: This is a Api Documentation for SIPIL 2022 with Golang Backend, Gin
+    Gonic Framework, GORM MySQL, and JWT Authentication
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+  title: API DOCUMENTATION - API FOR SIPIL 2022
+  version: "1.0"
+paths:
+  /auth/login:
+    post:
+      consumes:
+      - application/json
+      description: Login User
+      operationId: Authentication
+      parameters:
+      - description: Input username & password
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/global.CredentialsLogin'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      summary: Login User
+      tags:
+      - Users
+  /auth/register:
+    post:
+      consumes:
+      - application/json
+      description: Register User
+      parameters:
+      - description: Register User Data
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/global.USER'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      summary: Register User
+      tags:
+      - Users
+  /company:
+    get:
+      consumes:
+      - application/json
+      description: API untuk mengambil semua company yang terdapat dalam database.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil Semua Company
+      tags:
+      - Company
+    post:
+      consumes:
+      - application/json
+      description: API untuk membuat company baru.
+      parameters:
+      - description: Company Data
+        in: body
+        name: company
+        required: true
+        schema:
+          $ref: '#/definitions/global.COMPANY'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Membuat company baru.
+      tags:
+      - Company
+  /company/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: API untuk delete company.
+      parameters:
+      - description: Module ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Delete company.
+      tags:
+      - Company
+    get:
+      consumes:
+      - application/json
+      description: API untuk mencari company by ID yang terdapat dalam database.
+      parameters:
+      - description: Company ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil Company by ID
+      tags:
+      - Company
+    put:
+      consumes:
+      - application/json
+      description: API untuk update company.
+      parameters:
+      - description: Company Data
+        in: body
+        name: company
+        required: true
+        schema:
+          $ref: '#/definitions/global.COMPANY'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Update company.
+      tags:
+      - Company
+  /division:
+    get:
+      consumes:
+      - application/json
+      description: API untuk mengambil semua division yang terdapat dalam database.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil Semua Division
+      tags:
+      - Division
+    post:
+      consumes:
+      - application/json
+      description: API untuk membuat division baru.
+      parameters:
+      - description: Division Data
+        in: body
+        name: division
+        required: true
+        schema:
+          $ref: '#/definitions/global.DIVISION'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Membuat division baru.
+      tags:
+      - Division
+  /division/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: API untuk delete division.
+      parameters:
+      - description: Module ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Delete division.
+      tags:
+      - Division
+    get:
+      consumes:
+      - application/json
+      description: API untuk mencari division by ID yang terdapat dalam database.
+      parameters:
+      - description: Division ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil Division by ID
+      tags:
+      - Division
+    put:
+      consumes:
+      - application/json
+      description: API untuk update division.
+      parameters:
+      - description: Division Data
+        in: body
+        name: division
+        required: true
+        schema:
+          $ref: '#/definitions/global.DIVISION'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Update division.
+      tags:
+      - Division
+  /employee:
+    get:
+      consumes:
+      - application/json
+      description: API untuk mengambil semua employee yang terdapat dalam database.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil Semua Employees
+      tags:
+      - Employees
+    post:
+      consumes:
+      - application/json
+      description: API untuk membuat employee baru.
+      parameters:
+      - description: Employees Data
+        in: body
+        name: employee
+        required: true
+        schema:
+          $ref: '#/definitions/global.MODULE'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Membuat employee baru.
+      tags:
+      - Employees
+  /employee/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: API untuk delete employee.
+      parameters:
+      - description: Employee ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Delete employee.
+      tags:
+      - Employees
+    get:
+      consumes:
+      - application/json
+      description: API untuk mencari employee by ID yang terdapat dalam database.
+      parameters:
+      - description: Employees ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil Employees by ID
+      tags:
+      - Employees
+    put:
+      consumes:
+      - application/json
+      description: API untuk update employee.
+      parameters:
+      - description: Employees Data
+        in: body
+        name: employee
+        required: true
+        schema:
+          $ref: '#/definitions/global.MODULE'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Update employee.
+      tags:
+      - Employees
+  /global:
+    get:
+      consumes:
+      - application/json
+      description: API untuk mengambil semua global yang terdapat dalam database.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil Semua Global
+      tags:
+      - Global
+    post:
+      consumes:
+      - application/json
+      description: API untuk membuat global baru.
+      parameters:
+      - description: Global Data
+        in: body
+        name: global
+        required: true
+        schema:
+          $ref: '#/definitions/global.GLOBAL'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Membuat global baru.
+      tags:
+      - Global
+  /global/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: API untuk delete global.
+      parameters:
+      - description: Module ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Delete global.
+      tags:
+      - Global
+    get:
+      consumes:
+      - application/json
+      description: API untuk mencari global by ID yang terdapat dalam database.
+      parameters:
+      - description: Global ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil Global by ID
+      tags:
+      - Global
+    put:
+      consumes:
+      - application/json
+      description: API untuk update global.
+      parameters:
+      - description: Global Data
+        in: body
+        name: global
+        required: true
+        schema:
+          $ref: '#/definitions/global.GLOBAL'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Update global.
+      tags:
+      - Global
+  /location:
+    get:
+      consumes:
+      - application/json
+      description: API untuk mengambil semua locationyang terdapat dalam database.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil Semua Locations
+      tags:
+      - Locations
+    post:
+      consumes:
+      - application/json
+      description: API untuk membuat locationbaru.
+      parameters:
+      - description: Locations Data
+        in: body
+        name: location
+        required: true
+        schema:
+          $ref: '#/definitions/global.MODULE'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Membuat locationbaru.
+      tags:
+      - Locations
+  /location/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: API untuk delete location by ID
+      parameters:
+      - description: Location ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Delete location
+      tags:
+      - Locations
+    get:
+      consumes:
+      - application/json
+      description: API untuk mencari locationby ID yang terdapat dalam database.
+      parameters:
+      - description: Locations ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil Locations by ID
+      tags:
+      - Locations
+    put:
+      consumes:
+      - application/json
+      description: API untuk update location
+      parameters:
+      - description: Locations Data
+        in: body
+        name: location
+        required: true
+        schema:
+          $ref: '#/definitions/global.MODULE'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Update location
+      tags:
+      - Locations
+  /log:
+    get:
+      consumes:
+      - application/json
+      description: API untuk mengambil semua log yang terdapat dalam database.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil Semua Log
+      tags:
+      - Log
+    post:
+      consumes:
+      - application/json
+      description: API untuk membuat log baru.
+      parameters:
+      - description: Log Data
+        in: body
+        name: log
+        required: true
+        schema:
+          $ref: '#/definitions/global.LOG'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Membuat log baru.
+      tags:
+      - Log
+  /log/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: API untuk delete log.
+      parameters:
+      - description: Module ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Delete log.
+      tags:
+      - Log
+    get:
+      consumes:
+      - application/json
+      description: API untuk mencari log by ID yang terdapat dalam database.
+      parameters:
+      - description: Log ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil Log by ID
+      tags:
+      - Log
+    put:
+      consumes:
+      - application/json
+      description: API untuk update log.
+      parameters:
+      - description: Log Data
+        in: body
+        name: log
+        required: true
+        schema:
+          $ref: '#/definitions/global.LOG'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Update log.
+      tags:
+      - Log
+  /module:
+    get:
+      consumes:
+      - application/json
+      description: API untuk mengambil semua module yang terdapat dalam database.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil Semua Modules
+      tags:
+      - Modules
+    post:
+      consumes:
+      - application/json
+      description: API untuk membuat module baru.
+      parameters:
+      - description: Modules Data
+        in: body
+        name: module
+        required: true
+        schema:
+          $ref: '#/definitions/global.MODULE'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Membuat module baru.
+      tags:
+      - Modules
+  /module/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: API untuk delete module.
+      parameters:
+      - description: Module ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Delete module.
+      tags:
+      - Modules
+    get:
+      consumes:
+      - application/json
+      description: API untuk mencari module by ID yang terdapat dalam database.
+      parameters:
+      - description: Modules ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil Modules by ID
+      tags:
+      - Modules
+    put:
+      consumes:
+      - application/json
+      description: API untuk update module.
+      parameters:
+      - description: Modules Data
+        in: body
+        name: module
+        required: true
+        schema:
+          $ref: '#/definitions/global.MODULE'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Update module.
+      tags:
+      - Modules
+  /oborDTL:
+    get:
+      consumes:
+      - application/json
+      description: API untuk mengambil semua oborDTLyang terdapat dalam database.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil Semua OborDTLs
+      tags:
+      - OborDTLs
+    post:
+      consumes:
+      - application/json
+      description: API untuk membuat oborDTLbaru.
+      parameters:
+      - description: OborDTLs Data
+        in: body
+        name: oborDTL
+        required: true
+        schema:
+          $ref: '#/definitions/global.MODULE'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Membuat oborDTLbaru.
+      tags:
+      - OborDTLs
+  /oborDTL/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: API untuk delete oborDTL by ID
+      parameters:
+      - description: OborDTL ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Delete oborDTL
+      tags:
+      - OborDTLs
+    get:
+      consumes:
+      - application/json
+      description: API untuk mencari oborDTLby ID yang terdapat dalam database.
+      parameters:
+      - description: OborDTLs ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil OborDTLs by ID
+      tags:
+      - OborDTLs
+    put:
+      consumes:
+      - application/json
+      description: API untuk update oborDTL
+      parameters:
+      - description: OborDTLs Data
+        in: body
+        name: oborDTL
+        required: true
+        schema:
+          $ref: '#/definitions/global.MODULE'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Update oborDTL
+      tags:
+      - OborDTLs
+  /oborHDR:
+    get:
+      consumes:
+      - application/json
+      description: API untuk mengambil semua oborHDRyang terdapat dalam database.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil Semua OborHDRs
+      tags:
+      - OborHDRs
+    post:
+      consumes:
+      - application/json
+      description: API untuk membuat oborHDRbaru.
+      parameters:
+      - description: OborHDRs Data
+        in: body
+        name: oborHDR
+        required: true
+        schema:
+          $ref: '#/definitions/global.MODULE'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Membuat oborHDRbaru.
+      tags:
+      - OborHDRs
+  /oborHDR/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: API untuk delete oborHDR by ID
+      parameters:
+      - description: OborHDR ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Delete oborHDR
+      tags:
+      - OborHDRs
+    get:
+      consumes:
+      - application/json
+      description: API untuk mencari oborHDRby ID yang terdapat dalam database.
+      parameters:
+      - description: OborHDRs ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil OborHDRs by ID
+      tags:
+      - OborHDRs
+    put:
+      consumes:
+      - application/json
+      description: API untuk update oborHDR
+      parameters:
+      - description: OborHDRs Data
+        in: body
+        name: oborHDR
+        required: true
+        schema:
+          $ref: '#/definitions/global.MODULE'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Update oborHDR
+      tags:
+      - OborHDRs
+  /partner:
+    get:
+      consumes:
+      - application/json
+      description: API untuk mengambil semua partner yang terdapat dalam database.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil Semua Partner
+      tags:
+      - Partner
+    post:
+      consumes:
+      - application/json
+      description: API untuk membuat partner baru.
+      parameters:
+      - description: Partner Data
+        in: body
+        name: partner
+        required: true
+        schema:
+          $ref: '#/definitions/global.PARTNER'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Membuat partner baru.
+      tags:
+      - Partner
+  /partner/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: API untuk delete partner.
+      parameters:
+      - description: Module ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Delete partner.
+      tags:
+      - Partner
+    get:
+      consumes:
+      - application/json
+      description: API untuk mencari partner by ID yang terdapat dalam database.
+      parameters:
+      - description: Partner ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil Partner by ID
+      tags:
+      - Partner
+    put:
+      consumes:
+      - application/json
+      description: API untuk update partner.
+      parameters:
+      - description: Partner Data
+        in: body
+        name: partner
+        required: true
+        schema:
+          $ref: '#/definitions/global.PARTNER'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Update partner.
+      tags:
+      - Partner
+  /permission:
+    get:
+      consumes:
+      - application/json
+      description: API untuk mengambil semua permission yang terdapat dalam database.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil Semua Permission
+      tags:
+      - Permission
+    post:
+      consumes:
+      - application/json
+      description: API untuk membuat permission baru.
+      parameters:
+      - description: Permission Data
+        in: body
+        name: permission
+        required: true
+        schema:
+          $ref: '#/definitions/global.PERMISSION'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Membuat permission baru.
+      tags:
+      - Permission
+  /permission/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: API untuk delete permission.
+      parameters:
+      - description: Module ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Delete permission.
+      tags:
+      - Permission
+    get:
+      consumes:
+      - application/json
+      description: API untuk mencari permission by ID yang terdapat dalam database.
+      parameters:
+      - description: Permission ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil Permission by ID
+      tags:
+      - Permission
+    put:
+      consumes:
+      - application/json
+      description: API untuk update permission.
+      parameters:
+      - description: Permission Data
+        in: body
+        name: permission
+        required: true
+        schema:
+          $ref: '#/definitions/global.PERMISSION'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Update permission.
+      tags:
+      - Permission
+  /systemsetting/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: API untuk delete systemsetting.
+      parameters:
+      - description: Module ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Delete systemsetting.
+      tags:
+      - SystemSetting
+    get:
+      consumes:
+      - application/json
+      description: API untuk mencari systemsetting by ID yang terdapat dalam database.
+      parameters:
+      - description: SystemSetting ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil SystemSetting by ID
+      tags:
+      - SystemSetting
+    put:
+      consumes:
+      - application/json
+      description: API untuk update systemsetting.
+      parameters:
+      - description: SystemSetting Data
+        in: body
+        name: systemsetting
+        required: true
+        schema:
+          $ref: '#/definitions/global.SYSTEMSETTING'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Update systemsetting.
+      tags:
+      - SystemSetting
+  /systemsettings:
+    get:
+      consumes:
+      - application/json
+      description: API untuk mengambil semua systemsetting yang terdapat dalam database.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil Semua SystemSetting
+      tags:
+      - SystemSetting
+    post:
+      consumes:
+      - application/json
+      description: API untuk membuat systemsetting baru.
+      parameters:
+      - description: SystemSetting Data
+        in: body
+        name: systemsetting
+        required: true
+        schema:
+          $ref: '#/definitions/global.SYSTEMSETTING'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Membuat systemsetting baru.
+      tags:
+      - SystemSetting
+  /taskDTL:
+    get:
+      consumes:
+      - application/json
+      description: API untuk mengambil semua taskDTLyang terdapat dalam database.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil Semua TaskDTLs
+      tags:
+      - TaskDTLs
+    post:
+      consumes:
+      - application/json
+      description: API untuk membuat taskDTLbaru.
+      parameters:
+      - description: TaskDTLs Data
+        in: body
+        name: taskDTL
+        required: true
+        schema:
+          $ref: '#/definitions/global.MODULE'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Membuat taskDTLbaru.
+      tags:
+      - TaskDTLs
+  /taskDTL/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: API untuk delete taskDTL by ID
+      parameters:
+      - description: TaskDTL ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Delete taskDTL
+      tags:
+      - TaskDTLs
+    get:
+      consumes:
+      - application/json
+      description: API untuk mencari taskDTLby ID yang terdapat dalam database.
+      parameters:
+      - description: TaskDTLs ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil TaskDTLs by ID
+      tags:
+      - TaskDTLs
+    put:
+      consumes:
+      - application/json
+      description: API untuk update taskDTL
+      parameters:
+      - description: TaskDTLs Data
+        in: body
+        name: taskDTL
+        required: true
+        schema:
+          $ref: '#/definitions/global.MODULE'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Update taskDTL
+      tags:
+      - TaskDTLs
+  /taskHDR:
+    get:
+      consumes:
+      - application/json
+      description: API untuk mengambil semua taskHDRyang terdapat dalam database.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil Semua TaskHDRs
+      tags:
+      - TaskHDRs
+    post:
+      consumes:
+      - application/json
+      description: API untuk membuat taskHDRbaru.
+      parameters:
+      - description: TaskHDRs Data
+        in: body
+        name: taskHDR
+        required: true
+        schema:
+          $ref: '#/definitions/global.MODULE'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Membuat taskHDRbaru.
+      tags:
+      - TaskHDRs
+  /taskHDR/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: API untuk delete taskHDR by ID
+      parameters:
+      - description: TaskHDR ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Delete taskHDR
+      tags:
+      - TaskHDRs
+    get:
+      consumes:
+      - application/json
+      description: API untuk mencari taskHDRby ID yang terdapat dalam database.
+      parameters:
+      - description: TaskHDRs ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil TaskHDRs by ID
+      tags:
+      - TaskHDRs
+    put:
+      consumes:
+      - application/json
+      description: API untuk update taskHDR
+      parameters:
+      - description: TaskHDRs Data
+        in: body
+        name: taskHDR
+        required: true
+        schema:
+          $ref: '#/definitions/global.MODULE'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Update taskHDR
+      tags:
+      - TaskHDRs
+  /user/profile/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Get User Profile
+      parameters:
+      - description: User ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Get User Profile
+      tags:
+      - Users
+  /user/update/{id}:
+    put:
+      consumes:
+      - application/json
+      description: Update User
+      parameters:
+      - description: User ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Update User
+      tags:
+      - Users
+  /userGroup:
+    get:
+      consumes:
+      - application/json
+      description: API untuk mengambil semua userGroup yang terdapat dalam database.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil Semua UserGroup
+      tags:
+      - UserGroup
+    post:
+      consumes:
+      - application/json
+      description: API untuk membuat userGroup baru.
+      parameters:
+      - description: UserGroup Data
+        in: body
+        name: userGroup
+        required: true
+        schema:
+          $ref: '#/definitions/global.USERGROUP'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Membuat userGroup baru.
+      tags:
+      - UserGroup
+  /userGroup/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: API untuk delete userGroup.
+      parameters:
+      - description: Module ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Delete userGroup.
+      tags:
+      - UserGroup
+    get:
+      consumes:
+      - application/json
+      description: API untuk mencari userGroup by ID yang terdapat dalam database.
+      parameters:
+      - description: UserGroup ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Mengambil UserGroup by ID
+      tags:
+      - UserGroup
+    put:
+      consumes:
+      - application/json
+      description: API untuk update userGroup.
+      parameters:
+      - description: UserGroup Data
+        in: body
+        name: userGroup
+        required: true
+        schema:
+          $ref: '#/definitions/global.USERGROUP'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          headers:
+            Token:
+              description: qwerty
+              type: string
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            type: object
+      security:
+      - bearerAuth: []
+      summary: Update userGroup.
+      tags:
+      - UserGroup
+securityDefinitions:
+  ApiKeyAuth:
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"
